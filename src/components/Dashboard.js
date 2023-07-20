@@ -15,7 +15,7 @@ const Dashboard = () => {
             <Routes>
                 <Route path="/weathers" element={<Weathers />} />
                 <Route path="/weathers/:id" element={
-                    <WeatherDetail themeColor={themeColorState} setTheme={setThemeColorState} />} />
+                    <WeatherDetail setTheme={setThemeColorState} />} />
                 <Route path="/add-job" element={<AddJob />} />
             </Routes>
             </ThemeColorContext.Provider>
